@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-db$%wes=i7v^xjpj0#alc1!_u8=@ptt*fsxe!c%^+^kvgizk3h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['medclinic1-6.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.railway.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
