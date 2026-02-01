@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    container_name: django_app
+    command: gunicorn main.wsgi:application --bind 0.0.0.0:8089
+    volumes:
+      - .:/app
+      - static_volume:/app/static
+      - media_volume:/app/media
+    ports:
+      - "8089:8089"
+
+
+volumes:
+  static_volume:
+  media_volume:
